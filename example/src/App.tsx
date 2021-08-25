@@ -24,13 +24,9 @@ const App = () => {
     <div style={{ textAlign: 'center' }}>
       <div>
         <h1>Examples</h1>
-        <a href='http://localhost:3000?isActive=true'>
-          http://localhost:3000?isActive=true
-        </a>
+        <a href='http://localhost:3000?isActive=true'>/?isActive=true</a>
         <br />
-        <a href='http://localhost:3000?isFinalized=true'>
-          http://localhost:3000?isFinalized=true
-        </a>
+        <a href='http://localhost:3000?isFinalized=true'>/?isFinalized=true</a>
       </div>
       {filteredUsers.map((user) => (
         <>
