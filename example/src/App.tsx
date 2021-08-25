@@ -1,6 +1,4 @@
 import React from 'react'
-
-import 'qs-filter/dist/index.css'
 import { useFilterFromQueryParams } from 'qs-filter'
 
 const App = () => {

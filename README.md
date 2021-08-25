@@ -13,15 +13,30 @@ npm install --save qs-filter
 ## Usage
 
 ```tsx
-import React, { Component } from 'react'
+import React from 'react'
+import { useFilterFromQueryParams } from 'qs-filter'
 
-import MyComponent from 'qs-filter'
-import 'qs-filter/dist/index.css'
-
-class Example extends Component {
-  render() {
-    return <MyComponent />
-  }
+const App = () => {
+  const users: User[] = [
+    {
+      id: 1,
+      isActive: true,
+      isFinalized: false
+    },
+    {
+      id: 2,
+      isActive: false,
+      isFinalized: true
+    }
+  ]
+  const filteredUsers = useFilterFromQueryParams(users)
+  return filteredUsers.map((user) => (
+    <>
+      <p>Id : {user.id}</p>
+      <p>isActive : {user.isActive.toString()}</p>
+      <p>isFinalized : {user.isFinalized.toString()}</p>
+    </>
+  ))
 }
 ```
 
