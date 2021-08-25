@@ -26,7 +26,7 @@ const App = () => {
         <h1>Examples</h1>
         <a href='/qs-filter/?isActive=true'>/?isActive=true</a>
         <br />
-        <a href='/qs-filter/?isActive=true'>/?isFinalized=true</a>
+        <a href='/qs-filter/?isFinalized=true'>/?isFinalized=true</a>
       </div>
       {filteredUsers.map((user) => (
         <>
