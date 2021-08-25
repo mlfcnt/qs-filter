@@ -24,9 +24,9 @@ const App = () => {
     <div style={{ textAlign: 'center' }}>
       <div>
         <h1>Examples</h1>
-        <a href='/?isActive=true'>/?isActive=true</a>
+        <a href='/qs-filter/?isActive=true'>/?isActive=true</a>
         <br />
-        <a href='/?isFinalized=true'>/?isFinalized=true</a>
+        <a href='/qs-filter/?isActive=true'>/?isFinalized=true</a>
       </div>
       {filteredUsers.map((user) => (
         <>
