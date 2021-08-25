@@ -1,6 +1,6 @@
 {
   "name": "qs-filter",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "hook to filter items from query parameters",
   "author": "mlfcnt",
   "license": "MIT",
