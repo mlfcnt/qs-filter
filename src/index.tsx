@@ -1,3 +1,3 @@
-import { useFilterFromQueryParams } from './hooks/useFilterFromQueryParams'
+import { useFilterFromQueryParams, useQueryParams } from './hooks'
 
-export { useFilterFromQueryParams }
+export { useFilterFromQueryParams, useQueryParams }

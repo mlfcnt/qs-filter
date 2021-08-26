@@ -1,4 +1,4 @@
-import * as qs from 'query-string'
+import { useQueryParams } from './useQueryParams'
 
 interface Item {
   [key: string]: any
@@ -10,11 +10,8 @@ interface Item {
  * @example const filteredUsers = useFilterFromQueryParams(users)
  */
 export const useFilterFromQueryParams = (items?: Item[]): Item[] => {
+  const queryParams = useQueryParams()
   if (!items) return []
-  const queryParams = qs.parse(window.location.search, {
-    parseBooleans: true,
-    arrayFormat: 'comma'
-  })
 
   if (!Object.values(queryParams)?.length) return items
 

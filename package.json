@@ -49,6 +49,7 @@
     "eslint-plugin-prettier": "^3.1.1",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^4.2.0",
     "eslint-plugin-standard": "^4.0.1",
     "gh-pages": "^2.2.0",
     "microbundle-crl": "^0.13.10",
@@ -63,6 +64,8 @@
     "dist"
   ],
   "dependencies": {
-    "query-string": "^7.0.1"
+    "@types/react-router-dom": "^5.1.8",
+    "query-string": "^7.0.1",
+    "react-router-dom": "^5.2.0"
   }
 }
