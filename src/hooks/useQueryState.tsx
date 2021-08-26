@@ -11,6 +11,7 @@ export function useQueryState<S>(
   const history = useHistory()
   const { pathname } = useLocation()
   const queryParams = useQueryParams()
+  console.log('🚀 ~ queryParams', queryParams)
 
   const [stateValue, setState] = useState<S>(initialState)
 

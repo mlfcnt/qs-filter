@@ -3,7 +3,6 @@ import { useMemo } from 'react'
 import { useLocation } from 'react-router-dom'
 
 export const useQueryParams = (options?: qs.ParseOptions) => {
-  console.log('insie useQueryParams')
   const defaultOptions: qs.ParseOptions = {
     parseBooleans: true,
     arrayFormat: 'comma'
